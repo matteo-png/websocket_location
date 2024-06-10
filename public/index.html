@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Location App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-vJKqF1EvYwny75GnqaiuKUfDc2QygGU"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+      <header>
+          <h1>Real-time User Locations</h1>
+          <div class="controls">
+              <input type="text" id="name" placeholder="Entrer votre nom">
+              <button id="register">Enregistrer</button>
+          </div>
+      </header>
+      <main>
+          <div id="map"></div>
+          <section>
+              <h2>Localisation de personnes en direct :</h2>
+              <ul id="users"></ul>
+          </section>
+      </main>
+  </div>
+</body>
+
+</html>
